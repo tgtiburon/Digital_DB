@@ -19,8 +19,8 @@ app.use(routes);
 // turn on connection to db and server
 // force: false tells it to to not DROP tables
 // but if we set it true it will drop...good for changing table structures.
-
-sequelize.sync({ force: true }).then(() => {
+//TODO: 
+sequelize.sync({ force: false }).then(() => {
 
   app.listen(PORT, ()=> console.log(`Now listening on port: ${PORT}!`));
 

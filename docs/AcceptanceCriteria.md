@@ -24,10 +24,10 @@ SO THAT my company can compete with other e-commerce companies
 WHEN I add my database name, MySQL username, and MySQL password to an environment variable file
 THEN I am able to connect to a database using Sequelize
 
-- [] WHEN I enter schema and seed commands
+- [x] WHEN I enter schema and seed commands
 THEN a development database is created and is seeded with test data
 
-- [] WHEN I enter the command to invoke the application
+- [x] WHEN I enter the command to invoke the application
 THEN my server is started and the Sequelize models are synced to the MySQL database
 
 - [] WHEN I open API GET routes in Insomnia for categories, products, or tags
@@ -41,12 +41,12 @@ THEN I am able to successfully create, update, and delete data in my database
 ## Getting Started:
 
 
-- [] Use MySQL2 and Sequelize to connect to Express.js API.  Use dotenv to hide credentials
+- [x] Use MySQL2 and Sequelize to connect to Express.js API.  Use dotenv to hide credentials
 
-- [] Use schema.sql in the db folder to create your db using MySQL shell commands
+- [x] Use schema.sql in the db folder to create your db using MySQL shell commands
 
 
-- [] Schema -- 4 Models
+- [x] Schema -- 4 Models
 
             1. Category
                 id- integer, doesn't allow null, set as primary_key, uses auto increment
@@ -78,6 +78,12 @@ THEN I am able to successfully create, update, and delete data in my database
 
             HINT: Make sure you set up foreign key relationships that match the column we created in the respective models.
 
+
+![](tables1.PNG)
+
+![](tables2.PNG)
+
+
 - [] Fill out the API Routes to Perform RESTful CRUD operations
             1. Fill out the unfinished routes in product-routes.js, tag-routes.js, and category-routes.js to perform create, read, update, and delete operations using your Sequelize models.
 
@@ -85,10 +91,10 @@ THEN I am able to successfully create, update, and delete data in my database
 
             HINT: Be sure to look at your module project's code for syntax help and use your model's column definitions to figure out what req.body will be for POST and PUT routes!
 
-- [] Seed the database
+- [x] Seed the database
             1. After creating the models and routes, run npm run seed to seed data to your database so that you can test your routes.
 
-- [] Sync Sequelize to the database on server start
+- [x] Sync Sequelize to the database on server start
             1. Create the code needed in server.js to sync the Sequelize models to the MySQL database on server start.
 
 
