@@ -9,7 +9,7 @@ const { findOne } = require('../../models/Category');
 // get all products
 router.get('/', (req, res) => {
   // find all products
-  //TODO:
+  
   // be sure to include its associated Category and Tag data
   Product.findAll({
    
@@ -33,7 +33,6 @@ router.get('/', (req, res) => {
 router.get('/:id', (req, res) => {
  
   // find a single product by its `id`
-  //TODO:
   // be sure to include its associated Category and Tag data
   Product.findOne({
     where: {

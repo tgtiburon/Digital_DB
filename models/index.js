@@ -13,7 +13,7 @@ Product.belongsTo(Category, {
 // Categories have many Products
 Category.hasMany(Product, {
   foreignKey: 'category_id',
-  // needed?
+  // Safest to set as NULL so I don't delete anything I don't want to
   onDelete: 'SET NULL'
 });
 

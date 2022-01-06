@@ -6,7 +6,7 @@ class Tag extends Model {}
 
 Tag.init(
   {
-    // define columns
+    // define columns id, tag_name
     id: {
       type:DataTypes.INTEGER,
       allowNull: false,
@@ -21,7 +21,7 @@ Tag.init(
     }
 
   },
-  {
+  { // Tag table settings
     sequelize,
     timestamps: false,
     freezeTableName: true,

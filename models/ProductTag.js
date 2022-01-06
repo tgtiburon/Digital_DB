@@ -5,8 +5,8 @@ const sequelize = require('../config/connection');
 class ProductTag extends Model {}
 
 ProductTag.init(
-  {
-    // define columns
+  {// This is a table that sets up references between the different models
+    // define columns id, product_id, tag_id
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,
@@ -31,7 +31,7 @@ ProductTag.init(
 
     }
   },
-  {
+  { // ProductTag table settings
     sequelize,
     timestamps: false,
     freezeTableName: true,
