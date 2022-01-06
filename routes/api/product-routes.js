@@ -12,11 +12,13 @@ router.get('/', (req, res) => {
   //TODO:
   // be sure to include its associated Category and Tag data
   Product.findAll({
-    attributes: [
-      'id',
-      'product_name',
-      'price', 
-      'stock',
+   
+    include: [
+      Category,
+      {
+        model: Tag,
+        through: ProductTag
+      }
     ]
     
   })
@@ -29,6 +31,7 @@ router.get('/', (req, res) => {
 
 // get one product
 router.get('/:id', (req, res) => {
+ 
   // find a single product by its `id`
   //TODO:
   // be sure to include its associated Category and Tag data
@@ -40,7 +43,15 @@ router.get('/:id', (req, res) => {
       'id',
       'product_name',
       'price',
-      'stock'
+      'stock',
+      'category_id'
+    ],
+    include: [
+      Category,
+      {
+        model: Tag,
+        through: ProductTag
+      }
     ]
   })
   .then(dbProductData => {
@@ -77,7 +88,7 @@ router.post('/', (req, res) => {
           };
         });
         return ProductTag.bulkCreate(productTagIdArr);
-      }
+      } 
       // if no product tags, just respond
       res.status(200).json(product);
     })

@@ -10,15 +10,25 @@ Product.belongsTo(Category, {
   foreignKey: 'category_id'
 });
 
+// Categories have many Products
 Category.hasMany(Product, {
-  foreignKey: 'id'
+  foreignKey: 'category_id',
+  // needed?
+  onDelete: 'SET NULL'
 });
 
-// Categories have many Products
 
 // Products belongToMany Tags (through ProductTag)
+Product.belongsToMany(Tag, {
+  through: ProductTag,
+  foreignKey: 'product_id'
+})
 
 // Tags belongToMany Products (through ProductTag)
+Tag.belongsToMany(Product, {
+  through: ProductTag,
+  foreignKey: 'tag_id'
+})
 
 module.exports = {
   Product,

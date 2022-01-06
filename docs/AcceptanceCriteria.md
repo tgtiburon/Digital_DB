@@ -4,9 +4,16 @@
 
 Video of app in action:
 
+
+GET routes to return all: 1. categories 2. products, 3. tags
+
 ![](13-orm-homework-demo-01.gif)
 
+GET routes to return: 1. single category 2. single product 3. single tag
+
 ![](13-orm-homework-demo-02.gif)
+
+POST, PUT, DELETE routes for categories.
 
 ![](13-orm-homework-demo-03.gif)
 
@@ -20,7 +27,7 @@ SO THAT my company can compete with other e-commerce companies
 
 ## Acceptance Criteria
 
-- [] GIVEN a functional Express.js API
+- [x] GIVEN a functional Express.js API
 WHEN I add my database name, MySQL username, and MySQL password to an environment variable file
 THEN I am able to connect to a database using Sequelize
 
@@ -30,10 +37,10 @@ THEN a development database is created and is seeded with test data
 - [x] WHEN I enter the command to invoke the application
 THEN my server is started and the Sequelize models are synced to the MySQL database
 
-- [] WHEN I open API GET routes in Insomnia for categories, products, or tags
+- [x] WHEN I open API GET routes in Insomnia for categories, products, or tags
 THEN the data for each of these routes is displayed in a formatted JSON
 
-- [] WHEN I test API POST, PUT, and DELETE routes in Insomnia
+- [x] WHEN I test API POST, PUT, and DELETE routes in Insomnia
 THEN I am able to successfully create, update, and delete data in my database
 
 
@@ -70,7 +77,7 @@ THEN I am able to successfully create, update, and delete data in my database
                 tag_id - integer, references the tag model's id
             
 
-- [] Associations:  Will need association methods on Sequelize models to create the following relationships
+- [x] Associations:  Will need association methods on Sequelize models to create the following relationships
             1. Product belongs to Category, as a category can have multiple products but a product can only belong to one category.
             2. Category has many Product models.
             3. Product belongs to many Tag models. Using the ProductTag through model, allow products to have multiple tags and tags to have many products.
@@ -84,7 +91,7 @@ THEN I am able to successfully create, update, and delete data in my database
 ![](tables2.PNG)
 
 
-- [] Fill out the API Routes to Perform RESTful CRUD operations
+- [x] Fill out the API Routes to Perform RESTful CRUD operations
             1. Fill out the unfinished routes in product-routes.js, tag-routes.js, and category-routes.js to perform create, read, update, and delete operations using your Sequelize models.
 
             NOTE: The functionality for creating the many-to-many relationship for products is already done for you.
@@ -143,37 +150,36 @@ THEN I am able to successfully create, update, and delete data in my database
 
 
 ## Technical Acceptance Criteria: 40%
-- [ ] Uses MySQL2 and Sequelize
+- [x] Uses MySQL2 and Sequelize
 
-- [ ] Uses dotenv
+- [x] Uses dotenv
 
-- [ ] Syncs Sequelize models to a MySQL database on server start
+- [x] Syncs Sequelize models to a MySQL database on server start
 
-- [ ] Includes column definitions for all four models outlined in the Challenge instructions
+- [x] Includes column definitions for all four models outlined in the Challenge instructions
 
-- [ ] Includes model associations outlined in the challenge instructions
+- [x] Includes model associations outlined in the challenge instructions
 
-- [ ] 
 
 
 
 ## Repository Quality: 13%
-- [ ] Repository has a unique name.
+- [x] Repository has a unique name.
 
-- [ ] Repository follows best practices for file structure and naming conventions.
+- [x] Repository follows best practices for file structure and naming conventions.
 
-- [ ] Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
+- [x] Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
 
-- [ ] Repository contains multiple descriptive commit messages.
+- [x] Repository contains multiple descriptive commit messages.
 
-- [ ] Repository contains quality README file with description, screenshot, and link to deployed application.
+- [] Repository contains quality README file with description, screenshot, and link to deployed application.
 
 
 
 
 ## How to Submit the Challenge
-- [ ] You are required to submit BOTH of the following for review:
+- [] You are required to submit BOTH of the following for review:
 
-- [ ] A walkthrough video demonstrating the functionality of the application and all of the acceptance criteria being met.
+- [] A walkthrough video demonstrating the functionality of the application and all of the acceptance criteria being met.
 
-- [ ] The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
+- [] The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
