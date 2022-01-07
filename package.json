@@ -1,7 +1,7 @@
 {
   "name": "digital_db",
   "version": "1.0.0",
-  "description": "---",
+  "description": "E-Commerce Backend",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
