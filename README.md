@@ -68,8 +68,6 @@ This project provides a backend for an ecommerce website.
 
       3. To run type npm start 
 
-      4. To run the app on a live server click the link below:    
-  &emsp;[Digital_DB on Heroku](https://git.heroku.com/digital-db-tg.git)
 
 
   ---
