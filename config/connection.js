@@ -2,10 +2,6 @@
 require('dotenv').config();
 // import the Sequelize Constructor from the library
 const Sequelize = require('sequelize');
-//let sequelize;
-
-
-
 
 
 // For when it is live using jawsdb

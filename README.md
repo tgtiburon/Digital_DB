@@ -46,6 +46,9 @@ This project provides a backend for an ecommerce website.
 
 ## Screenshot 
   ![](digital_db.PNG)
+
+
+   [Here is a link to a video showing me using Staff Examiner to manipulate the Staff Database](https://watch.screencastify.com/v/J5yaNUPIoCjH1iwS0yFf)
   
   
 
@@ -64,6 +67,9 @@ This project provides a backend for an ecommerce website.
       2. For seeded DB type npm run seed 
 
       3. To run type npm start 
+
+      4. To run the app on a live server click the link below:    
+  &emsp;[Digital_DB on Heroku](https://git.heroku.com/digital-db-tg.git)
 
 
   ---
