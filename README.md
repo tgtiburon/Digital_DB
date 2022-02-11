@@ -48,7 +48,7 @@ This project provides a backend for an ecommerce website.
   ![](digital_db.PNG)
 
 
-   [Here is a link to a video showing me using Staff Examiner to manipulate the Staff Database](https://watch.screencastify.com/v/J5yaNUPIoCjH1iwS0yFf)
+   [Here is a link to a video showing me using Digital DB  to manipulate the database of a fictional store.](https://watch.screencastify.com/v/J5yaNUPIoCjH1iwS0yFf)
   
   
 
